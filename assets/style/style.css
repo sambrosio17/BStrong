@@ -230,7 +230,7 @@ main {
 }
 
 .course__container .container__main {
-  background: url("/assets/svg/waves.svg");
+  background: url("./assets/svg/waves.svg");
   background-position-y: 25vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -292,7 +292,7 @@ main {
 .courses__cards .yoga__card .bgCircle {
   width: 368px;
   height: 368px;
-  background: url("/assets/svg/circle.svg");
+  background: url("./assets/svg/circle.svg");
 }
 
 .courses__cards .yoga__card #one {
@@ -344,7 +344,7 @@ main {
 .courses__cards .cardio__card .bg__poly {
   width: 520px;
   height: 612.8px;
-  background: url("/assets/svg/polygon.svg");
+  background: url("./assets/svg/polygon.svg");
 }
 
 .courses__cards .cardio__card #one {
@@ -357,7 +357,7 @@ main {
   position: absolute;
   width: 458px;
   height: 411px;
-  background: url("/assets/svg/poly2.svg");
+  background: url("./assets/svg/poly2.svg");
   top: 50px;
   left: 50px;
 }
@@ -378,7 +378,7 @@ main {
 .courses__cards .dance__card .bg__rect {
   width: 355px;
   height: 175px;
-  background: url("/assets/svg/rectangle.svg");
+  background: url("./assets/svg/rectangle.svg");
 }
 
 .courses__cards .dance__card #one {
