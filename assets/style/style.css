@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header__container {
+  width: 100%;
+  min-height: 10vh;
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;*/
+}
+
+.header__container .header__main {
+  min-height: 10vh;
+  padding-left: 1em;
+  padding-right: 1em;
+  background: #EEEEEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__container .header__main .header__main__logo h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header__container .header__main .header__main__logo p {
+  font-size: 28px;
+  font-style: italic;
+  margin-top: -20px;
+  color: #FF4040;
+}
+
+.header__container .header__main .header__main__nav {
+  width: 80vh;
+}
+
+.header__container .header__main .header__main__nav .menuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__container .header__main .header__main__nav .menuList a {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.53);
+  position: relative;
+}
+
+.header__container .header__main .header__main__nav .menuList a:hover {
+  color: #FF4040;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.header__container .header__main .header__main__nav .menuList a::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  width: 100%;
+  height: 2px;
+  background: grey;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.header__container .header__main .header__main__nav .menuList a:hover::before {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  background: #FF4040;
+}
+
+.header__container .header__main .header__main__nav .menuList a:focus::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  width: 100%;
+  height: 2px;
+  background: #FF4040;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.header__container .header__main .header__main__nav .menuList a:focus {
+  color: black;
+  font-weight: bold;
+}
+
+main {
+  margin-top: auto;
+}
+
+.home__container {
+  height: 90vh;
+}
+
+.home__container .home__main {
+  background: peachpuff;
+  overflow: hidden;
+  min-height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home__container .home__main .home__main__left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 3% 30% 10% 10%;
+      grid-template-columns: 35% 3% 30% 10% 10%;
+  -ms-grid-rows: 200px 0px 120px 20px 150px;
+      grid-template-rows: 200px 0px 120px 20px 150px;
+}
+
+.home__container .home__main .home__main__left p {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.home__container .home__main .home__main__left #first {
+  font-size: 100px;
+  font-weight: 500;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 5;
+      grid-column-end: span 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home__container .home__main .home__main__left #first span {
+  color: #FF4040;
+  font-weight: bold;
+}
+
+.home__container .home__main .home__main__left #second {
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 5;
+      grid-column-end: span 5;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 4;
+  font-style: italic;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home__container .home__main .home__main__left #second span {
+  color: #FF4040;
+  font-weight: bold;
+}
+
+.home__container .home__main .home__main__right {
+  position: relative;
+  margin-left: 2em;
+}
+
+.home__container .home__main .home__main__right .big__cirle {
+  width: 500px;
+  height: 500px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF7A7A), to(#FF4040)), #FFFFFF;
+  background: linear-gradient(180deg, #FF7A7A 0%, #FF4040 100%), #FFFFFF;
+  border-radius: 100%;
+  position: absolute;
+  top: 150px;
+  right: 20vh;
+}
+
+.home__container .home__main .home__main__right img {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  right: 4.5vh;
+  height: 700px;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.course__container {
+  min-height: 100vh;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  width: 100%;
+}
+
+.course__container .container__main {
+  background: url("/assets/svg/waves.svg");
+  background-position-y: 25vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+.course__container .container__main .main__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.course__container .container__main .main__title h1 {
+  font-weight: 600;
+  font-size: 80px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.course__container .container__main .main__title p {
+  margin-top: -30px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FF4040;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+.courses__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 17vh;
+}
+
+.courses__cards .__card {
+  width: 290px;
+  height: 340px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.65)), to(rgba(255, 255, 255, 0))), #C4C4C4;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%), #C4C4C4;
+  border-radius: 34px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  position: relative;
+}
+
+.courses__cards .yoga__card .bgCircle {
+  width: 368px;
+  height: 368px;
+  background: url("/assets/svg/circle.svg");
+}
+
+.courses__cards .yoga__card #one {
+  position: absolute;
+  left: -190px;
+  top: -150px;
+}
+
+.courses__cards .yoga__card #two {
+  position: absolute;
+  left: +70px;
+  top: +150px;
+}
+
+.courses__cards .yoga__card img {
+  position: absolute;
+  height: 300px;
+  top: 50px;
+  left: 10px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.courses__cards .card__wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.courses__cards .card__wrapper h1 {
+  font-weight: bold;
+  font-size: 70px;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-top: -1.5vh;
+}
+
+.courses__cards .__central {
+  margin-top: 15vh;
+}
+
+.courses__cards .cardio__card {
+  position: relative;
+}
+
+.courses__cards .cardio__card .bg__poly {
+  width: 520px;
+  height: 612.8px;
+  background: url("/assets/svg/polygon.svg");
+}
+
+.courses__cards .cardio__card #one {
+  position: absolute;
+  top: -160px;
+  left: -290px;
+}
+
+.courses__cards .cardio__card #two {
+  position: absolute;
+  width: 458px;
+  height: 411px;
+  background: url("/assets/svg/poly2.svg");
+  top: 50px;
+  left: 50px;
+}
+
+.courses__cards .cardio__card img {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  height: 300px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.courses__cards .dance__card {
+  position: relative;
+}
+
+.courses__cards .dance__card .bg__rect {
+  width: 355px;
+  height: 175px;
+  background: url("/assets/svg/rectangle.svg");
+}
+
+.courses__cards .dance__card #one {
+  position: absolute;
+  left: -100px;
+  top: -29px;
+}
+
+.courses__cards .dance__card #two {
+  position: absolute;
+  left: 75px;
+  top: 60px;
+}
+
+.courses__cards .dance__card #three {
+  position: absolute;
+  left: -120px;
+  top: 250px;
+}
+
+.courses__cards .dance__card img {
+  position: absolute;
+  height: 300px;
+  top: 40px;
+  left: -5px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/*# sourceMappingURL=style.css.map */

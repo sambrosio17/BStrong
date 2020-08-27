@@ -1,0 +1,48 @@
+$secondary-color:#FF4040;
+$grey:#EEEEEE;
+$nav-link: rgba(0, 0, 0, 0.53);
+$gradient: linear-gradient(180deg, #FF7A7A 0%, #FF4040 100%),
+#FFFFFF;
+
+
+.course__container {
+
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+
+    .container__main {
+        background: url("/assets/svg/waves.svg");
+        background-position-y: 25vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        max-height: fit-content;
+
+        .main__title {
+            width: fit-content;
+            margin: 0 auto;
+            text-align: center;
+
+            h1 {
+                font-weight: 600;
+                font-size: 80px;
+                width: fit-content;
+                height: fit-content;
+
+            }
+
+            p {
+                margin-top: -30px;
+                font-weight: 500;
+                font-size: 20px;
+                color: $secondary-color;
+                font-style: italic;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}
+
+
+@import 'cards';

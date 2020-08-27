@@ -1,0 +1,108 @@
+$secondary-color:#FF4040;
+$grey:#EEEEEE;
+$nav-link: rgba(0, 0, 0, 0.53);
+$gradient: linear-gradient(180deg, #FF7A7A 0%, #FF4040 100%),
+#FFFFFF;
+
+
+main {
+    //margin-top: 5.8em;
+    margin-top: auto;
+}
+
+.home__container {
+    height: 90vh;
+
+
+    .home__main {
+
+        background: peachpuff;
+        overflow: hidden;
+
+        min-height: 90vh;
+        display: flex;
+        justify-content: space-between;
+
+        .home__main__left {
+
+            display: grid;
+            grid-template-columns: 35% 3% 30% 10% 10%;
+            grid-template-rows: 200px 0px 120px 20px 150px;
+
+
+            p {
+                grid-column-start: 3;
+                grid-column-end: span 4;
+                grid-row-start: 2;
+                font-size: 20px;
+                letter-spacing: 0.2em;
+                justify-self: center;
+            }
+
+
+            #first {
+                font-size: 100px;
+                font-weight: 500;
+                grid-column-start: 2;
+                grid-column-end: span 5;
+                grid-row-start: 3;
+                grid-row-end: 4;
+                justify-self: center;
+                align-self: center;
+
+
+                span {
+                    color: $secondary-color;
+                    font-weight: bold;
+                }
+            }
+
+            #second {
+                font-size: 100px;
+                font-weight: bold;
+                text-align: center;
+                grid-column-start: 2;
+                grid-column-end: span 5;
+                grid-row-start: 4;
+                grid-row-end: 4;
+                font-style: italic;
+                align-self: center;
+
+                span {
+                    color: $secondary-color;
+                    font-weight: bold;
+                }
+            }
+
+
+        }
+
+
+        .home__main__right {
+            position: relative;
+            margin-left: 2em;
+
+
+
+            .big__cirle {
+                width: 500px;
+                height: 500px;
+                background: $gradient;
+                border-radius: 100%;
+                position: absolute;
+                top: 150px;
+                right: 20vh;
+            }
+
+            img {
+                position: absolute;
+                z-index: 1;
+                top: 20px;
+                right: 4.5vh;
+                height: 700px;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+            }
+
+        }
+    }
+}

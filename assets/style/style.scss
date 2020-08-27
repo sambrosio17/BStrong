@@ -1,0 +1,108 @@
+$secondary-color:#FF4040;
+$grey:#EEEEEE;
+$nav-link: rgba(0, 0, 0, 0.53);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header__container {
+  width: 100%;
+  min-height: 10vh;
+  /*position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;*/
+
+  .header__main {
+    min-height: 10vh;
+    padding-left: 1em;
+    padding-right: 1em;
+    background: $grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__main__logo {
+
+
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      p {
+        font-size: 28px;
+        font-style: italic;
+        margin-top: -20px;
+        color: $secondary-color;
+      }
+    }
+
+    .header__main__nav {
+
+      width: 80vh;
+
+      .menuList {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+          font-size: 18px;
+          font-weight: 600;
+          text-decoration: none;
+          color: $nav-link;
+          position: relative;
+        }
+
+        a:hover {
+          color: $secondary-color;
+          transition: color 0.5s ease;
+        }
+
+        a::before {
+          content: "";
+          position: absolute;
+          top: 28px;
+          width: 100%;
+          height: 2px;
+          background: grey;
+          transition: all 0.5s ease;
+          transform: scaleX(0);
+        }
+
+        a:hover::before {
+          transform-origin: bottom center;
+          transform: scaleX(1);
+          background: $secondary-color;
+        }
+
+        a:focus::before {
+          content: "";
+          position: absolute;
+          top: 28px;
+          width: 100%;
+          height: 2px;
+          background: $secondary-color;
+          transition: all 0.5s ease;
+          transform: scaleX(1);
+        }
+
+        a:focus {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+
+@import '_home';
+
+@import '_courses';

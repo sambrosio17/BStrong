@@ -1,0 +1,143 @@
+$secondary-color: #ff4040;
+$grey: #eeeeee;
+$nav-link: rgba(0, 0, 0, 0.53);
+$gradient: linear-gradient(180deg, #ff7a7a 0%, #ff4040 100%),
+#ffffff;
+$card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%),
+#C4C4C4;
+
+$primary-red: #d35555;
+
+.courses__cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 17vh;
+
+    .__card {
+        width: 290px;
+        height: 340px;
+        background: $card-bg;
+        border-radius: 34px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        overflow: hidden;
+        position: relative;
+    }
+
+    .yoga__card {
+        .bgCircle {
+            width: 368px;
+            height: 368px;
+            background: url("/assets/svg/circle.svg");
+        }
+
+        #one {
+            position: absolute;
+            left: -190px;
+            top: -150px;
+        }
+
+        #two {
+            position: absolute;
+            left: +70px;
+            top: +150px;
+        }
+
+        img {
+            position: absolute;
+            height: 300px;
+            top: 50px;
+            left: 10px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    .card__wrapper {
+        width: fit-content;
+
+        h1 {
+            font-weight: bold;
+            font-size: 70px;
+            letter-spacing: 0.075em;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            margin-top: -1.5vh;
+        }
+    }
+
+    .__central {
+        margin-top: 15vh;
+    }
+
+
+    .cardio__card {
+        position: relative;
+
+        .bg__poly {
+            width: 520px;
+            height: 612.8px;
+            background: url("/assets/svg/polygon.svg");
+        }
+
+        #one {
+            position: absolute;
+            top: -160px;
+            left: -290px;
+        }
+
+        #two {
+            position: absolute;
+            width: 458px;
+            height: 411px;
+            background: url("/assets/svg/poly2.svg");
+            top: 50px;
+            left: 50px;
+        }
+
+        img {
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            height: 300px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+
+    .dance__card {
+
+        position: relative;
+
+        .bg__rect {
+            width: 355px;
+            height: 175px;
+            background: url("/assets/svg/rectangle.svg");
+        }
+
+        #one {
+            position: absolute;
+            left: -100px;
+            top: -29px;
+        }
+
+        #two {
+            position: absolute;
+            left: 75px;
+            top: 60px;
+        }
+
+        #three {
+            position: absolute;
+            left: -120px;
+            top: 250px;
+        }
+
+        img {
+            position: absolute;
+            height: 300px;
+            top: 40px;
+            left: -5px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+}
