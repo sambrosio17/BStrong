@@ -1,26 +1,24 @@
-$secondary-color:#FF4040;
-$grey:#EEEEEE;
+$secondary-color: #ff4040;
+$grey: #eeeeee;
 $nav-link: rgba(0, 0, 0, 0.53);
-$gradient: linear-gradient(180deg, #FF7A7A 0%, #FF4040 100%),
-#FFFFFF;
+$gradient: linear-gradient(180deg, #ff7a7a 0%, #ff4040 100%),
+#ffffff;
+$card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%),
+#C4C4C4;
+$primary-red: #d35555;
 
 
-.course__container {
-
+.pricing__container {
     min-height: 100vh;
     max-height: fit-content;
-    min-width: 100%;
-    max-width: fit-content;
+    width: 100%;
+    background: white;
 
-    .container__main {
-        background: url("/assets/svg/waves.svg");
-        background-position-y: 25vh;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .pricing__main {
         min-height: 100vh;
         max-height: fit-content;
 
-        .main__title {
+        .pricing__title {
             width: fit-content;
             margin: 0 auto;
             text-align: center;
@@ -34,7 +32,7 @@ $gradient: linear-gradient(180deg, #FF7A7A 0%, #FF4040 100%),
             }
 
             p {
-                margin-top: -30px;
+                margin-top: -20px;
                 font-weight: 500;
                 font-size: 20px;
                 color: $secondary-color;
@@ -45,5 +43,4 @@ $gradient: linear-gradient(180deg, #FF7A7A 0%, #FF4040 100%),
     }
 }
 
-
-@import 'cards';
+@import '_pricing_card';
