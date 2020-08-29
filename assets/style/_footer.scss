@@ -1,0 +1,67 @@
+$secondary-color: #ff4040;
+$grey: #eeeeee;
+$nav-link: rgba(0, 0, 0, 0.53);
+$gradient: linear-gradient(180deg, #ff7a7a 0%, #ff4040 100%),
+#ffffff;
+$card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0) 100%),
+#C4C4C4;
+$primary-red: #d35555;
+
+.footer__container {
+    min-height: 5vh;
+    max-height: 10vh;
+    background-color: $grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo__container {
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            font-size: 28px;
+            font-style: italic;
+            margin-top: -20px;
+            color: $secondary-color;
+        }
+    }
+
+    .disclaimer {
+        span {
+            font-weight: 700;
+            color: $secondary-color;
+        }
+
+        margin-right: 1rem;
+    }
+
+    .social__icon__container {
+        margin-left: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        .social_icon {
+            font-size: 36px;
+            width: 36px;
+            color: $secondary-color;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease-out;
+        }
+
+        a:hover .social_icon {
+            filter: grayscale(0%);
+            transition: filter 0.3s ease-in;
+        }
+    }
+}

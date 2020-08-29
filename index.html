@@ -1,142 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B Strong - Wellness Park</title>
-    <link rel="stylesheet" href="./assets/style/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="header__container">
-      <div class="header__main">
-        <div class="header__main__logo">
-          <h1>B STRONG</h1>
-          <p>wellness park</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B Strong - Wellness Park</title>
+  <script src="https://kit.fontawesome.com/9b886a1068.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/style/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="backtotop" id="top"></div>
+  <div class="header__container">
+    <div class="header__main">
+      <div class="header__main__logo">
+        <h1>B STRONG</h1>
+        <p>wellness park</p>
+      </div>
+      <div class="header__main__nav">
+        <div class="menuList">
+          <a href="#home" onclick="scrollToSection('home')">home</a>
+          <a href="#courses" onclick="scrollToSection('courses')">courses</a>
+          <a href="#pricing" onclick="scrollToSection('pricing')">pricing</a>
+          <a href="#about" onclick="scrollToSection('about')">about</a>
+          <a href="#contact" onclick="scrollToSection('contact')">contact</a>
         </div>
-        <div class="header__main__nav">
-          <div class="menuList">
-            <a href="#home">home</a>
-            <a href="#courses">courses</a>
-            <a href="#pricing">pricing</a>
-            <a href="#about">about</a>
-            <a href="#contact">contact</a>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="home__container" id="#home">
+      <div class="home__main">
+        <div class="home__main__left">
+          <p class="punchline">level up yourself</p>
+          <h1 id="first"><span>B</span>ecome</h1>
+          <h1 id="second"><span>strong</span>er</h1>
+        </div>
+        <div class="home__main__right">
+          <img src="./assets/img/1.png" />
+          <div class="big__cirle"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="course__container" id="#courses">
+      <div class="container__main">
+        <div class="main__title">
+          <h1>Our Courses</h1>
+          <p>we can do anything together</p>
+        </div>
+        <div class="courses__cards">
+          <div class="card__wrapper">
+            <div class="yoga__card __card">
+              <div class="bgCircle" id="one"></div>
+              <div class="bgCircle" id="two"></div>
+              <img src="./assets/img/4.png" alt="yoga" />
+            </div>
+            <h1>yoga</h1>
+          </div>
+          <div class="card__wrapper __central">
+            <div class="cardio__card __card">
+              <div class="bg__poly" id="one"></div>
+              <div class="bg__poly" id="two"></div>
+              <img src="./assets/img/3.png" alt="cardio" />
+            </div>
+            <h1>cardio</h1>
+          </div>
+          <div class="card__wrapper _">
+            <div class="dance__card __card">
+              <div class="bg__rect" id="one"></div>
+              <div class="bg__rect" id="two"></div>
+              <div class="bg__rect" id="three"></div>
+              <img src="./assets/img/2.png" alt="dance" />
+            </div>
+            <h1>dance</h1>
           </div>
         </div>
       </div>
     </div>
-    <main>
-      <div class="home__container" id="#home">
-        <div class="home__main">
-          <div class="home__main__left">
-            <p class="punchline">level up yourself</p>
-            <h1 id="first"><span>B</span>ecome</h1>
-            <h1 id="second"><span>strong</span>er</h1>
-          </div>
-          <div class="home__main__right">
-            <img src="./assets/img/1.png" />
-            <div class="big__cirle"></div>
-          </div>
-        </div>
-      </div>
 
-      <div class="course__container" id="#courses">
-        <div class="container__main">
-          <div class="main__title">
-            <h1>Our Courses</h1>
-            <p>we can do anything together</p>
-          </div>
-          <div class="courses__cards">
-            <div class="card__wrapper">
-              <div class="yoga__card __card">
-                <div class="bgCircle" id="one"></div>
-                <div class="bgCircle" id="two"></div>
-                <img src="./assets/img/4.png" alt="yoga" />
-              </div>
-              <h1>yoga</h1>
-            </div>
-            <div class="card__wrapper __central">
-              <div class="cardio__card __card">
-                <div class="bg__poly" id="one"></div>
-                <div class="bg__poly" id="two"></div>
-                <img src="./assets/img/3.png" alt="cardio" />
-              </div>
-              <h1>cardio</h1>
-            </div>
-            <div class="card__wrapper _">
-              <div class="dance__card __card">
-                <div class="bg__rect" id="one"></div>
-                <div class="bg__rect" id="two"></div>
-                <div class="bg__rect" id="three"></div>
-                <img src="./assets/img/2.png" alt="dance" />
-              </div>
-              <h1>dance</h1>
-            </div>
-          </div>
+    <div class="pricing__container" id="#pricing">
+      <div class="pricing__main">
+        <div class="pricing__title">
+          <h1>Subscription</h1>
+          <p>a plan for everyone</p>
         </div>
-      </div>
-
-      <div class="pricing__container">
-        <div class="pricing__main">
-          <div class="pricing__title">
-            <h1>Subscription</h1>
-            <p>a plan for everyone</p>
+        <div class="pricing__cards">
+          <div class="card__wrapper">
+            <h1>newbie</h1>
+            <div class="__card first__card">
+              <ul>
+                <li>Access to every area</li>
+                <li>8day/month access</li>
+                <li>2hrs/day</li>
+              </ul>
+            </div>
+            <div class="price__tag">
+              <p id="price">20$</p>
+              <span>per month</span>
+            </div>
           </div>
-          <div class="pricing__cards">
-            <div class="card__wrapper">
-              <h1>newbie</h1>
-              <div class="__card first__card">
-                <ul>
-                  <li>Access to every area</li>
-                  <li>8day/month access</li>
-                  <li>2hrs/day</li>
-                </ul>
-              </div>
-              <div class="price__tag">
-                <p id="price">20$</p>
-                <span>per month</span>
-              </div>
+          <div class="card__wrapper">
+            <h1>medium</h1>
+            <div class="__card second__card">
+              <ul>
+                <li>Access to every area</li>
+                <li>12day/month access</li>
+                <li>1 free course</li>
+                <li>3hrs/day</li>
+              </ul>
             </div>
-            <div class="card__wrapper">
-              <h1>medium</h1>
-              <div class="__card second__card">
-                <ul>
-                  <li>Access to every area</li>
-                  <li>12day/month access</li>
-                  <li>1 free course</li>
-                  <li>3hrs/day</li>
-                </ul>
-              </div>
-              <div class="price__tag">
-                <p id="price">50$</p>
-                <span>per month</span>
-              </div>
+            <div class="price__tag">
+              <p id="price">50$</p>
+              <span>per month</span>
             </div>
-            <div class="card__wrapper">
-              <h1>hard</h1>
-              <div class="__card third__card">
-                <ul>
-                  <li>Access to every area</li>
-                  <li>16day/month access</li>
-                  <li>2 free course</li>
-                  <li>4hrs/day</li>
-                </ul>
-              </div>
-              <div class="price__tag">
-                <p id="price">70$</p>
-                <span>per month</span>
-              </div>
+          </div>
+          <div class="card__wrapper">
+            <h1>hard</h1>
+            <div class="__card third__card">
+              <ul>
+                <li>Access to every area</li>
+                <li>16day/month access</li>
+                <li>2 free course</li>
+                <li>4hrs/day</li>
+              </ul>
+            </div>
+            <div class="price__tag">
+              <p id="price">70$</p>
+              <span>per month</span>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+    <div class="about__container" id="#about">
+      <div class="about__main">
+        <div class="about__title">
+          <h1>About us</h1>
+          <p>this is who we are</p>
+        </div>
+        <div class="main__section">
+          <div class="section__left"></div>
+          <div class="section__right">
+            <div class="big__title">
+              <h1>B Strong</h1>
+              <p>wellness park</p>
+            </div>
+            <pre>
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Aliquam pulvinar sed metus quis malesuada.
+                Curabitur et quam metus. Donec suscipit quam in
+                felis ultricies malesuada. Nulla dolor arcu, dapibus 
+                in tellus hendrerit, cursus aliquet ipsum. Orci varius 
+                natoque penatibus et magnis dis parturient
+                montes, nascetur ridiculus mus.
+              </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact__container" id="#contact">
+      <div class="contact__main">
+        <div class="contact__title">
+          <h1>Contact</h1>
+          <p>come and join us</p>
+        </div>
+        <div class="main__section">
+          <div class="section__left"></div>
+          <div class="section__right">
+            <div class="list-item">
+              <img src="./assets/svg/pos_icon.svg" alt="position-icon">
+              <p>9366 Dogwood Court, Lynnwood, WA 98037</p>
+            </div>
+            <div class="list-item">
+              <img src="./assets/svg/num_ico.svg" alt="telephone-icon">
+              <p>202-555-0141</p>
+            </div>
+            <div class="list-item">
+              <img src="./assets/svg/mail_ico.svg" alt="mail-icon">
+              <p>info@b-strong.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
 
-    <script src="./assets/script/jquery.js"></script>
-    <script src="./assets/script/app.js"></script>
-  </body>
+  <div class="footer__container">
+    <div class="social__icon__container">
+      <a href="http://www.facebook.com"><i class="fab fa-facebook-square social_icon"></i></a>
+      <a href="http://wwww.instagram.com"><i class="fab fa-instagram-square social_icon"></i></a>
+      <a href="http://www.twitter.com"><i class="fab fa-twitter-square social_icon"></i></a>
+    </div>
+    <div class="logo__container">
+      <h1>B STRONG</h1>
+      <p>wellness park</p>
+    </div>
+    <div class="disclaimer">
+      <p>made with 💖 by <span>studio17</span></p>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="./assets/script/jquery.js"></script>
+  <script src="./assets/script/app.js"></script>
+</body>
+
 </html>

@@ -24,6 +24,7 @@ $primary-red: #d35555;
     }
 
     .yoga__card {
+
         .bgCircle {
             width: 368px;
             height: 368px;
@@ -32,14 +33,19 @@ $primary-red: #d35555;
 
         #one {
             position: absolute;
-            left: -190px;
+            left: -400px;
             top: -150px;
+            transition: left 0.5s ease-out;
+            transition-delay: 0.6s;
         }
+
+
 
         #two {
             position: absolute;
-            left: +70px;
+            left: +300px;
             top: +150px;
+            transition: left 0.5s ease;
         }
 
         img {
@@ -49,6 +55,21 @@ $primary-red: #d35555;
             left: 10px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
+    }
+
+    .yoga__card:hover #one {
+        left: -190px;
+
+        transition: left 0.5s ease;
+
+    }
+
+    .yoga__card:hover #two {
+        left: +70px;
+
+        transition: left 0.5s ease;
+        transition-delay: 0.6s;
+
     }
 
     .card__wrapper {
@@ -82,8 +103,14 @@ $primary-red: #d35555;
 
         #one {
             position: absolute;
-            top: -160px;
-            left: -290px;
+            width: 458px;
+            height: 411px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: -120px;
+            left: -400px;
+            transition: left 0.5s ease;
+
         }
 
         #two {
@@ -92,7 +119,9 @@ $primary-red: #d35555;
             height: 411px;
             background: url("/assets/svg/poly2.svg");
             top: 50px;
-            left: 50px;
+            left: 290px;
+            transition: left 0.5s ease;
+            transition-delay: 0.6s;
         }
 
         img {
@@ -102,6 +131,21 @@ $primary-red: #d35555;
             height: 300px;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
+    }
+
+    .cardio__card:hover #one {
+        left: -160px;
+
+        transition: left 0.5s ease;
+
+    }
+
+    .cardio__card:hover #two {
+        left: 50px;
+
+        transition: left 0.5s ease;
+        transition-delay: 0.6s;
+
     }
 
     .dance__card {
@@ -116,20 +160,25 @@ $primary-red: #d35555;
 
         #one {
             position: absolute;
-            left: -100px;
+            left: -400px;
             top: -29px;
+            transition: left 0.5s ease;
+            transition-delay: 1.2s;
         }
 
         #two {
             position: absolute;
-            left: 75px;
+            left: 290px;
             top: 60px;
+            transition: left 0.5s ease;
+            transition-delay: 0.6s;
         }
 
         #three {
             position: absolute;
-            left: -120px;
+            left: -400px;
             top: 250px;
+            transition: left 0.5s ease;
         }
 
         img {
@@ -140,4 +189,38 @@ $primary-red: #d35555;
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         }
     }
+
+    .dance__card:hover #one {
+        left: -100px;
+
+        transition: left 0.5s ease;
+
+    }
+
+    .dance__card:hover #two {
+        left: 75px;
+
+        transition: left 0.5s ease;
+        transition-delay: 0.6s;
+
+    }
+
+    .dance__card:hover #three {
+        left: -120px;
+
+        transition: left 0.5s ease;
+        transition-delay: 1.2s;
+
+    }
+}
+
+@keyframes one_enter {
+    from {
+        left: -300px;
+    }
+
+    to {
+        left: -190px;
+    }
+
 }
